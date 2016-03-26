@@ -19,6 +19,8 @@
 package openal
 
 //#cgo linux LDFLAGS: -lopenal
+//#cgo freebsd LDFLAGS: -L/usr/local/lib -lopenal
+//#cgo freebsd CFLAGS: -I/usr/local/include
 //#cgo darwin LDFLAGS: -framework OpenAL
 //#include <stdlib.h>
 //#include "local.h"
